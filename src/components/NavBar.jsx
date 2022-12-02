@@ -2,11 +2,13 @@ import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <div className="z-10 navbar bg-base-100">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl text-orange-600 drop-shadow-lg">SmartHard</a>
+    <div className="navbar bg-base-100 sticky top-0 z-50 h-1">
+      <div className="flex ">
+        <a className="btn btn-ghost normal-case text-xl text-orange-600 drop-shadow-lg">
+          SmartHard
+        </a>
       </div>
-      <div className="flex fixed w-screen justify-center items-center text-center">
+      <div className="  w-screen justify-center items-center text-center navbar  sticky top-0 z-50">
         <ul className="menu menu-horizontal bg-base-100 rounded-box p-2">
           <li>
             <a>Nosotros</a>
@@ -25,10 +27,9 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-   
+
       <CartWidget />
     </div>
-
   );
 };
 export default NavBar;

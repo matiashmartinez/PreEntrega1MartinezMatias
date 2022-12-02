@@ -29,7 +29,7 @@ const CartWidget = () => {
         >
           <div className="card-body">
             <span className="font-bold text-lg">1 Item</span>
-            <ItemListContainer greeting={'PC gamer'}/>
+           {/*  <ItemListContainer greeting={'PC gamer'}/> */}
             <span className="text-info">Subtotal: $999</span>
             
             <div className="card-actions">

@@ -6,8 +6,41 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: Verdana, Roboto;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.image-product {
+  padding-left: 280px;
+  padding-top: 50px;
+  border-width: 20px;
+}
+
+.item-count {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  width: 6em;
+}
+
+.item-count-cant {
+  border: 2px;
+  width: 425px;
+  padding-left: 15px;
+  height: 5em;
+  
+  ;
+}
+
+.item-count-add {
+  background-color: azure;
+  width: 65px;
+  margin: 5px;
+  color: black;
+  padding-bottom: 4px;
 }
