@@ -21,6 +21,7 @@ const NavBar = () => {
           </li>
           <li>
             <a>Videojuegos</a>
+            
           </li>
           <li>
             <a>Contacto</a>

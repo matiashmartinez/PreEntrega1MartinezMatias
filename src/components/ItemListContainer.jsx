@@ -2,7 +2,7 @@ import { data } from "autoprefixer";
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
   const [datos, setDatos] = useState([]);
   const products = [
     {
