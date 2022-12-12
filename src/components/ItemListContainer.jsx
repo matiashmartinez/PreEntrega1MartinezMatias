@@ -1,11 +1,11 @@
-import { data } from "autoprefixer";
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
+import { products } from "./data/data";
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
   const [datos, setDatos] = useState([]);
-  const [item, setItem] = useState(0);
-  const products = [
+
+  /* products = [
     {
       id: 1,
       nombre: "Notebook Gamer TUF",
@@ -41,7 +41,7 @@ const ItemListContainer = () => {
       stock: 6,
       image: "prod2.jpg",
     },
-  ];
+  ]; */
 
   useEffect(() => {
     const getProducts = new Promise((resolve) => {
@@ -59,5 +59,6 @@ const ItemListContainer = () => {
       <ItemList datos={datos} />
     </div>
   );
-}
-export default ItemListContainer;
+};
+
+export default ItemListContainer
