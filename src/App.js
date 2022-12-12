@@ -12,14 +12,14 @@ function App() {
     
     <BrowserRouter>
     <Header />
-    <Banner />
+    {/* <Banner /> */}
     <Routes>
     <Route path="/" element={<ItemListContainer />}/>
     </Routes>
       
       
       {/* <ItemListContainer /> */}
-      <Footer />
+     
       
     </BrowserRouter>
   );

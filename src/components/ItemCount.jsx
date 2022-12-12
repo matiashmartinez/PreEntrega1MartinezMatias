@@ -17,30 +17,18 @@ const ItemCount = ({ stock, onAdd }) => {
   }, []);
 
   return (
-    <div className=" bg-black max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-      <div className="p-1 m-1 text-center ">
-        <button
-          className="item-count-descontar "
-          onClick={descontar}
-          disabled={cant <= 0}
-        >
-          -
-        </button>
-        <span className="p2 m2 text-center ">{cant}</span>
-        <button
-          className="item-count-descontar"
-          onClick={incrementar}
-          disabled={cant >= stock}
-        >
-          +
-        </button>
-        <button className=" item-count-add2" disabled={stock <=0}>Agregar</button>
-      </div>
-
-      
-        
-      </div>
-   
+    <div>
+      <button className="btn" onClick={descontar} disabled={cant <= 0}>
+        -
+      </button>
+      <span className="p2 m-2  text-white">{cant}</span>
+      <button className="btn" onClick={incrementar} disabled={cant >= stock}>
+        +
+      </button>
+      <button className=" btn-primary p-2 m-4" disabled={stock <= 0}>
+       <p>Agregar</p> 
+      </button>
+    </div>
   );
 };
 export default ItemCount;

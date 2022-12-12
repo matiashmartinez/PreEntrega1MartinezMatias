@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Verdana, Roboto;
+  user-select: none
 }
 
 * {
@@ -44,3 +45,4 @@ body {
   color: black;
   padding-bottom: 4px;
 }
+
